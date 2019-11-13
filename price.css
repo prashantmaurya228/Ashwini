@@ -1,0 +1,146 @@
+html{
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+	background-image:linear-gradient(to right, #0000004f,#2226), url("images/background5.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*nav bar css start*/
+#logo img{
+	width: 13rem;
+	height: 15rem;
+}
+
+span{
+	  
+	font-family: 'Kaushan Script', cursive;
+	font-size: 4rem;
+	font-weight: bold;
+	color:#8a5757;
+	margin-left: 1rem;
+}
+
+
+#nav-bar{
+	height: 10rem;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #d7d7d799;
+}
+
+#logo{
+	display: flex;
+	align-items: center;
+
+}
+
+
+
+#nav-bar-links ul {
+	list-style: none;
+	display: flex;
+	font-family: 'Work Sans', sans-serif;
+	letter-spacing: -0.1rem;
+	word-spacing: -0.3rem;
+}
+
+#nav-bar-links ul a{
+	overflow: hidden;
+	text-decoration: none;
+	padding: 1.5rem;
+}
+
+.links{
+	font-size: 2.7rem;
+	color:#8a5757;
+	transition: color .3s;
+}
+a:hover {
+	color: white;
+}
+
+
+#wood{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 6rem;
+}
+
+.name {
+	text-align: center;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 3rem;
+	font-weight: lighter;
+	color: white;
+}
+
+.card div{
+	width: 58%;
+}
+
+
+#top, #bottom{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1.5rem;
+}
+
+.price{
+	color: white;
+	font-size: 2rem;
+	float: right;
+}
+
+.card{
+	box-shadow: 5px 5px 10px -1px black ;
+	color: white;
+	overflow: hidden;
+	border-radius: 2rem;
+	width: 50rem;
+	padding-left: .5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1.5rem;
+	height: 17rem;
+	opacity: .9;
+	transition: transform .3s cubic-bezier(.6,-0.28,.74,.05);
+	background-image: linear-gradient( 45deg ,#2dc6c6,#55cc29);
+}
+
+.card img{
+	width: 40%;
+	height: 100%;
+}
+
+.card:hover{
+	transform: scale(1.06);
+	opacity: 1;
+
+}
+
+
+@media only screen and (max-width: 1100px) {
+	html{
+	font-size: 50%;
+}
+}
+
+@media only screen and (max-width: 900px) {
+	#top, #bottom{
+	flex-direction: column;
+}
+}
+
